@@ -1,5 +1,5 @@
-# jacks0n
- my school project to prove how smart i am
+## THIS GAME IS VERY INCOMPLETE
+Currently all you have is a very basic player controller with a character texture made by me with a few things here and there.
 
 ## what is this game about?
 This is Jacks0n. A story about a 14 y/o boy who is secretly an Android developed by the company, Proton. In this world, Androids are everywhere. Most of them are known as “Maidroids”. Recently, some androids started to go against their program and gain consciousness. A lot of androids have been fighting against humans, tearing apart the world piece by piece in order to get independence. 
