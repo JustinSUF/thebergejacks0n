@@ -61,23 +61,36 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Horizontal Movement
+
     private void FixedUpdate()
     {
         rigidbody2D.velocity = new Vector2(horizontal * runSpeed * Time.deltaTime, rigidbody2D.velocity.y);
     }
 
-    // Jumping on objects labeled as "Ground" only
+    // Allowing to jump/climb on objects labeled as "Ground"
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             canJump = false;
         }
+
+        if (collision.gameObject.CompareTag("Climb"))
+        {
+            canJump = false;
+        }
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
+        {
+            canJump = true;
+        }
+
+        if (collision.gameObject.CompareTag("Climb"))
         {
             canJump = true;
         }
