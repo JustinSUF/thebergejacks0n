@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LiftButton : MonoBehaviour
+public class LiftClick : MonoBehaviour
 {
     public LiftAnimation liftScript;
     private void OnMouseDown()
