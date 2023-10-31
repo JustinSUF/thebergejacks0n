@@ -29,10 +29,29 @@ public class MainMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
+
     public void ReturnMain()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneBuildIndex:0);
+    }
+
+    public void Level1()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneBuildIndex: 1);
+    }
+
+    public void Level2()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneBuildIndex: 2);
+    }
+
+    public void Level3()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneBuildIndex: 3);
     }
 
 }
