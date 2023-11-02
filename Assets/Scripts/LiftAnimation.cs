@@ -7,7 +7,7 @@ public class LiftAnimation : MonoBehaviour
     private Animator animator;
     private bool animationPlayed;
     public bool buttonPressed;
-    // Start is called before the first frame update
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -16,13 +16,13 @@ public class LiftAnimation : MonoBehaviour
         buttonPressed = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(!animationPlayed && buttonPressed)
+        if (!animationPlayed && buttonPressed)
         {
             animator.enabled = true;
             animationPlayed = true;
         }
     }
+
 }

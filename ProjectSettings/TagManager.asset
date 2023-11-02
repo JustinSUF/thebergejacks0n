@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Climb
+  - LiftTrig
   layers:
   - Default
   - TransparentFX

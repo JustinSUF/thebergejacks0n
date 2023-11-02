@@ -9,4 +9,11 @@ public class LiftClick : MonoBehaviour
     {
         liftScript.buttonPressed = true;
     }
+
+    void OnTriggerEnter2D(Collider2D collision){
+        if (collision.CompareTag("Player"))
+        {
+            liftScript.buttonPressed = true;
+        }
+    }
 }
